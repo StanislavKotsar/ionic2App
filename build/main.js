@@ -55864,13 +55864,6 @@ var MainMenuPage = (function () {
             { name: 'FAVORITES', iconName: 'heart' }, { name: 'FEEDBACK', iconName: 'text' }, { name: 'OUR MENU', iconName: 'book' }
         ];
     }
-    MainMenuPage.prototype.ngOnInit = function () {
-        var defaultHeight = this.img.nativeElement.offsetLeft;
-        var offLeft = (window.innerWidth - this.img.nativeElement.offsetHeight) / 2;
-        var str = String(offLeft) + "px";
-        console.log(str);
-        this.rendrer.setProperty(this.img.nativeElement, 'style.marginLeft', offLeft);
-    };
     MainMenuPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad MainMenuPage');
     };
@@ -55879,19 +55872,14 @@ var MainMenuPage = (function () {
     };
     return MainMenuPage;
 }());
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])('img'),
-    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ElementRef */]) === "function" && _a || Object)
-], MainMenuPage.prototype, "img", void 0);
 MainMenuPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
         selector: 'page-main-menu',template:/*ion-inline-start:"/Users/stanislavkocar/myApps/huble_grape/src/pages/main-menu/main-menu.html"*/'<!--\n  Generated template for the MainMenuPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <ion-buttons start>\n      <button ion-button icon-only  color="dark" >\n        <ion-icon name="menu" id="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n\n  </ion-navbar>\n  <div class="wrap">\n      <img src="img/logo.png" class="logo" alt="" #img>\n  </div>\n</ion-header>\n\n<ion-content>\n\n\n<ion-grid>\n  <div class="sign">\n    <h2>JAMES DAWSON</h2>\n  </div>\n\n  <ion-row>\n    <ion-col col-6 text-center *ngFor="let item of items" (click)="enterListmenu()">\n      <div class="center">\n        <ion-icon [name]="item.iconName"></ion-icon>\n        <h4>{{item.name}}</h4>\n      </div>\n    </ion-col>\n  </ion-row>\n\n</ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/stanislavkocar/myApps/huble_grape/src/pages/main-menu/main-menu.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Renderer2 */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Renderer2 */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Renderer2 */]])
 ], MainMenuPage);
 
-var _a, _b, _c, _d;
 //# sourceMappingURL=main-menu.js.map
 
 /***/ }),

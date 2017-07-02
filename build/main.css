@@ -27549,6 +27549,7 @@ page-main-menu img {
   top: -12.5vh;
   margin: auto !important;
   overflow: visible !important;
+  background: transperant !important;
 }
 
 page-main-menu ion-navbar {
@@ -27574,7 +27575,6 @@ page-main-menu .sign {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  text-align: center;
   background-color: gold;
   width: 90%;
   margin: 0 auto;
@@ -27582,6 +27582,7 @@ page-main-menu .sign {
 }
 
 page-main-menu .sign h2 {
+  margin: 0;
   text-align: center;
   font-size: 2.5rem;
 }
