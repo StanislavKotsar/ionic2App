@@ -27456,10 +27456,23 @@ ion-navbar.toolbar {
   }
 }
 
+@font-face {
+  font-family: 'Apercu';
+  src: url("Apercu-Mono.eot");
+  src: url("Apercu-Mono.eot?#iefix") format("embedded-opentype"), url("Apercu-Mono.woff") format("woff"), url("Apercu-Mono.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'anotherTypewriter';
+  src: url("TypeWrong Smudged Bold.ttf");
+}
+
 page-login ion-label {
-  font-size: 7rem;
+  font-size: 4rem;
   text-transform: capitalize;
-  font-family: 'Roboto Slab', serif;
+  font-family: anotherTypewriter, serif;
   color: black;
 }
 
@@ -27488,8 +27501,8 @@ page-login #regBtn {
 }
 
 page-login p {
-  font-size: 1.1rem;
-  font-family: 'Roboto Slab', serif;
+  font-size: 0.8rem;
+  font-family: anotherTypewriter, serif;
 }
 
 page-login .pass {
@@ -27517,10 +27530,18 @@ page-main-menu ion-content {
 
 page-main-menu .header.header-ios > img, page-main-menu .header.header-md > img {
   height: 15vh;
+  margin: auto !important;
+  display: block;
   position: absolute;
-  top: 0;
-  left: 38%;
+  top: 0px;
+  left: 36%;
   overflow: visible;
+}
+
+page-main-menu img {
+  display: block;
+  margin: auto !important;
+  z-index: 1;
 }
 
 page-main-menu ion-navbar {
@@ -27592,8 +27613,13 @@ page-main-menu ion-icon {
 }
 
 page-main-menu h4 {
-  font-size: 1.5rem;
+  font-family: anotherTypewriter;
+  font-size: 1.2rem;
   margin: 0;
+}
+
+page-main-menu .toolbar-background {
+  background-color: white;
 }
 
 page-vine-list .header.header-ios > img, page-vine-list .header.header-md > img {
@@ -27601,7 +27627,28 @@ page-vine-list .header.header-ios > img, page-vine-list .header.header-md > img 
   position: absolute;
   top: 0;
   left: 38%;
-  overflow: visible;
+}
+
+page-vine-list #text-content {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+page-vine-list #pound {
+  float: right;
+  text-align: right;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.1rem;
+  margin-top: -1%;
+}
+
+page-vine-list #text {
+  float: left;
+  width: 85%;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1px;
 }
 
 page-vine-list .content {
@@ -27619,13 +27666,22 @@ page-vine-list ion-list {
 }
 
 page-vine-list .first {
+  font-family: anotherTypewriter;
+  font-weight: 900;
+  font-size: 1.3rem;
   background-color: #f3f3f3 !important;
 }
 
 page-vine-list .second {
-  font-size: 1.5rem;
+  font-family: anotherTypewriter;
+  font-weight: 900;
   color: #666666;
   margin-bottom: 2px !important;
+}
+
+page-vine-list .item-ios p {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 page-vine-list h3 {
@@ -27640,7 +27696,14 @@ page-vine-list ion-navbar {
   height: 12.5vh;
 }
 
+page-vine-list .toolbar-background {
+  background-color: white;
+}
+
 page-vine-list .ion-header {
-  background: white !important;
   height: 12.5vh;
+}
+
+page-vine-list .header-md::after {
+  background-image: none;
 }
