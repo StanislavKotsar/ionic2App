@@ -27528,20 +27528,27 @@ page-main-menu ion-content {
   background-position: center;
 }
 
-page-main-menu .header.header-ios > img, page-main-menu .header.header-md > img {
-  height: 15vh;
-  margin: auto !important;
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 36%;
-  overflow: visible;
+page-main-menu .wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 0;
 }
 
 page-main-menu img {
-  display: block;
-  margin: auto !important;
   z-index: 1;
+  height: 15vh;
+  margin: auto;
+  position: relative;
+  top: -12.5vh;
+  margin: auto !important;
+  overflow: visible !important;
 }
 
 page-main-menu ion-navbar {
@@ -27620,13 +27627,35 @@ page-main-menu h4 {
 
 page-main-menu .toolbar-background {
   background-color: white;
+  height: 12.5vh;
+  overflow: visible;
 }
 
-page-vine-list .header.header-ios > img, page-vine-list .header.header-md > img {
+page-vine-list .wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 0;
+}
+
+page-vine-list img {
+  z-index: 1;
   height: 15vh;
-  position: absolute;
-  top: 0;
-  left: 38%;
+  margin: auto;
+  position: relative;
+  top: -12.5vh;
+  margin: auto !important;
+  overflow: visible !important;
+}
+
+page-vine-list ion-navbar {
+  height: 12vh;
 }
 
 page-vine-list #text-content {
@@ -27692,12 +27721,10 @@ page-vine-list h3 {
   font-size: 1.5rem;
 }
 
-page-vine-list ion-navbar {
-  height: 12.5vh;
-}
-
 page-vine-list .toolbar-background {
   background-color: white;
+  height: 12.5vh;
+  overflow: visible;
 }
 
 page-vine-list .ion-header {
